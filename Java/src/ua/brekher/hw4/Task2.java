@@ -1,6 +1,6 @@
-package ua.brekher.hw26;
+package ua.brekher.hw4;
 
-import static ua.brekher.hw26.Task1.generateRandomArray;
+import static ua.brekher.hw4.Task1.generateRandomArray;
 
 public class Task2 {
     public static void main(String[] args) {

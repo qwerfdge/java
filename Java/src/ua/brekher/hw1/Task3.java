@@ -1,4 +1,4 @@
-package ua.brekher.hw23;
+package ua.brekher.hw1;
 
 public class Task3 {
     public static void main(String[] args) {

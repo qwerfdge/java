@@ -1,4 +1,4 @@
-package ua.brekher.hw25;
+package ua.brekher.hw3;
 
 import java.util.Scanner;
 

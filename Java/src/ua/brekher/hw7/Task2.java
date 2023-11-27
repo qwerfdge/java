@@ -1,4 +1,4 @@
-package ua.brekher.hw29;
+package ua.brekher.hw7;
 
 import java.util.Arrays;
 import java.util.Random;
