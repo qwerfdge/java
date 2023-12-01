@@ -1,6 +1,6 @@
 package ua.brekher.hw9;
 
-public class ExceptionExample2 {
+class ExceptionExample2 {
     public static void main(String[] args) {
         try {
             throw new CustomException("Пример пользовательского исключения");
