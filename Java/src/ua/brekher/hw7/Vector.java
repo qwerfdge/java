@@ -3,12 +3,12 @@ package ua.brekher.hw7;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Task2 {
+public class Vector {
     private final double x;
     private final double y;
     private final double z;
 
-    public Task2(double x, double y, double z) {
+    public Vector(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -18,38 +18,36 @@ public class Task2 {
         return Math.sqrt(x * x + y * y + z * z);
     }
 
-    public Task2 calculateCrossProduct(Task2 other) {
-        double newX = y * other.z - z * other.y;
-        double newY = z * other.x - x * other.z;
-        double newZ = x * other.y - y * other.x;
-        return new Task2(newX, newY, newZ);
+    public Vector calculateCrossProduct(Vector vector) {
+        double newX = y * vector.z - z * vector.y;
+        double newY = z * vector.x - x * vector.z;
+        double newZ = x * vector.y - y * vector.x;
+        return new Vector(newX, newY, newZ);
     }
 
-    public double calculateCosineAngle(Task2 other) {
-        double dotProduct = x * other.x + y * other.y + z * other.z;
-        double magnitudeProduct = calculateLength() * other.calculateLength();
+    public double calculateCosineAngle(Vector vector) {
+        double dotProduct = x * vector.x + y * vector.y + z * vector.z;
+        double magnitudeProduct = calculateLength() * vector.calculateLength();
         return dotProduct / magnitudeProduct;
     }
 
-    public Task2 add(Task2 other) {
-        return new Task2(x + other.x, y + other.y, z + other.z);
+    public Vector add(Vector vector) {
+        return new Vector(x + vector.x, y + vector.y, z + vector.z);
     }
 
-    public Task2 subtract(Task2 other) {
-        return new Task2(x - other.x, y - other.y, z - other.z);
+    public Vector subtract(Vector vector) {
+        return new Vector(x - vector.x, y - vector.y, z - vector.z);
     }
 
-    public static Task2[] generateRandomVectors(int N) {
+    public static Vector[] generateRandomVectors(int N) {
         Random rand = new Random();
-        Task2[] vectors = new Task2[N];
-
+        Vector[] vectors = new Vector[N];
         for (int i = 0; i < N; i++) {
             double randomX = rand.nextDouble();
             double randomY = rand.nextDouble();
             double randomZ = rand.nextDouble();
-            vectors[i] = new Task2(randomX, randomY, randomZ);
+            vectors[i] = new Vector(randomX, randomY, randomZ);
         }
-
         return vectors;
     }
 
@@ -59,10 +57,8 @@ public class Task2 {
     }
 
     public static void main(String[] args) {
-
-        Task2 vector1 = new Task2(1, 2, 3);
-        Task2 vector2 = new Task2(4, 5, 6);
-
+        Vector vector1 = new Vector(1, 2, 3);
+        Vector vector2 = new Vector(4, 5, 6);
         System.out.println("Vector1: " + vector1);
         System.out.println("Vector2: " + vector2);
         System.out.println("Length of Vector1: " + vector1.calculateLength());
@@ -70,10 +66,8 @@ public class Task2 {
         System.out.println("Cosine Angle: " + vector1.calculateCosineAngle(vector2));
         System.out.println("Vector Sum: " + vector1.add(vector2));
         System.out.println("Vector Difference: " + vector1.subtract(vector2));
-
-
         int N = 5;
-        Task2[] randomVectors = Task2.generateRandomVectors(N);
+        Vector[] randomVectors = Vector.generateRandomVectors(N);
         System.out.println("Random Vectors: " + Arrays.toString(randomVectors));
     }
 }

@@ -29,7 +29,7 @@ public class Task1 {
     }
 
     public static double calculateAverageGeometric(int[] array) {
-        int product = 1;
+        double product = 1.0;
         for (int value : array) {
             product *= value;
         }

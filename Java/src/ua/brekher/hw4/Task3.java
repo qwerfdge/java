@@ -16,14 +16,15 @@ public class Task3 {
     }
 
     public static int[] replaceEvenWithZero(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                array[i] = 0;
+        int[] newArray = array.clone();
+        for (int i = 0; i < newArray.length; i++) {
+            if (newArray[i] % 2 == 0) {
+                newArray[i] = 0;
             }
         }
-
-        return array;
+        return newArray;
     }
+
 
     public static void printArray(int[] array) {
         for (int value : array) {
