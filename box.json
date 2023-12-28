@@ -1,0 +1,14 @@
+{
+  "from":"China",
+  "material":"steel",
+  "color":"black",
+  "maxLiftingCapacity":{
+    "unit": "kg",
+    "value": 150
+},
+  "cargo": {
+    "name" : "electronics",
+    "clazz": "C-1"
+},
+  "deliveryDate" : "2021-09-20T11:07:00"
+}
