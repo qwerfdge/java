@@ -1,4 +1,4 @@
-package ua.brekher.hw15;
+package рцua.brekher.hw15;
 
 import java.lang.reflect.Field;
 
