@@ -9,7 +9,7 @@ import java.net.URI;
 public class GitHubApiTest {
 
     @Test
-    <JSONObject>
+    public <JSONObject>
     void testGitHubApiWithHttpClient() throws Exception {
 
         HttpClient client = HttpClient.newHttpClient();
