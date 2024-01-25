@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DOUSearchSuite">
+    <test name="DOUSearchTest">
+        <classes>
+            <class name="your.package.name.DOUSearchTest" />
+        </classes>
+    </test>
+</suite>
