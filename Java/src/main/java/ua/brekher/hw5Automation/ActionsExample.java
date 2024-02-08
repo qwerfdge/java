@@ -1,4 +1,4 @@
-package main.java.ua.brekher.hw6Automation;
+package main.java.ua.brekher.hw5Automation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
