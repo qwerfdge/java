@@ -1,4 +1,8 @@
-package ua.brekher.ProjectTest;
+package ua.brekher.Project;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class ProductTests {
     @BeforeMethod
@@ -17,5 +21,3 @@ public class ProductTests {
     public void testProductAvailability() {
     }
 }
-
-

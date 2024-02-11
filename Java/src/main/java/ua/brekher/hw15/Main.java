@@ -1,5 +1,7 @@
 package рцua.brekher.hw15;
 
+import ua.brekher.hw15.A;
+
 import java.lang.reflect.Field;
 
 public class Main {
